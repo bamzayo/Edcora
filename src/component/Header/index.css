@@ -1,0 +1,52 @@
+header {
+  position: sticky;
+  left: 0;
+  width: 100%;
+  top: 0;
+  color: #fff;
+  background: #101010;
+  z-index: 3;
+}
+
+.header__content {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  height: 84px;
+}
+
+header h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+header h5 {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+header div {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header__image {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/* Tablet (Small Devices) */
+@media screen and (max-width: 600px) {
+  header h3 {
+    display: none;
+  }
+  .header__content {
+    justify-content: center;
+  }
+}

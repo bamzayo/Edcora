@@ -1,0 +1,129 @@
+section {
+  margin: 84px auto 0;
+  width: 65%;
+  color: #fff;
+}
+
+section .filter_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+section .filter:hover {
+  cursor: pointer;
+}
+
+section .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter__drop-down {
+  position: absolute;
+  transform: translateX(-30%);
+  width: 300px;
+  background-color: #131313;
+  border-radius: 15px;
+  padding: 1.5rem 2rem 2rem;
+}
+
+.filter__drop-down h5 {
+  font-size: 1.4rem;
+  font-weight: 200;
+  padding-left: 0.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #fff;
+}
+
+.filter__icon {
+  font-size: 2.5rem;
+}
+.filter span {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+section .titles {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  transition: all 0.4s ease;
+}
+
+section .titles:hover {
+  cursor: pointer;
+}
+
+section .titles h4 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+  color: #d0cbcb;
+}
+
+section .titles h4.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+select {
+  width: 100%;
+  height: 37px;
+  background-color: #232323;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.labelSC {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.form {
+  text-align: center;
+}
+
+.stationcode-input {
+  color: black;
+  margin-left: 0.5rem;
+  outline: none;
+  padding: 0.3rem 0.4rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  width: 70px;
+  border: none;
+}
+
+/* Tablet (Medium Devices) */
+@media screen and (max-width: 1024px) {
+  section {
+    width: 85%;
+  }
+  section .titles {
+    gap: 1rem;
+  }
+  section .top {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+/* Tablet (Small Devices) */
+@media screen and (max-width: 600px) {
+  header h3 {
+    display: none;
+  }
+  .filter__drop-down {
+    transform: translateX(0);
+  }
+}
